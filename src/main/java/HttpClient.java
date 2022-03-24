@@ -35,7 +35,7 @@ public class HttpClient {
                         while ((line = reader.readLine()) != null) {
                             responseContent.append(line);
                         }
-                        System.out.println(responseContent);
+                        return responseContent.toString();
                     } catch (IOException e) {
                         System.out.println(e.getMessage());
                     }
